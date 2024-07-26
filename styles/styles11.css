@@ -3,6 +3,7 @@ header {
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 img {
   height: 25px;
@@ -55,9 +56,6 @@ thead {
 td {
   width: 100%;
   table-layout: fixed;
-  padding-left: auto;
-  margin-bottom: auto;
-
   border-collapse: collapse;
   border-bottom: 1px solid #7e4333;
 }
@@ -71,10 +69,10 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px;
+  padding: 0px; 
   font-weight: 800;
   background-color: #255538;
-  border-radius: 40%;
+  border-radius: 20%;
   margin: 0;
 }
 h4 {
@@ -85,4 +83,32 @@ h4 {
   justify-content: center;
   gap: 20px;
   padding: 0;
+}
+
+
+@media (max-width: 600px) {
+  header{
+    width: 100%;
+  }
+  #titulo {
+    display: none;
+  }
+  #contenedor {
+    flex-direction: column;
+    margin: 0%;
+  }
+  #receta_1{
+    margin-top:10px;
+  }
+  .caja_generica{
+    width: 100%;
+  }
+  #receta-1,
+  #receta-2,
+  #receta-3 {
+    width:100%;
+    margin:0%;
+    margin-top: 10px;
+  }
+  h2{font-size: 40px;}
 }
